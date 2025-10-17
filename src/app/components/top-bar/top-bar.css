@@ -1,0 +1,104 @@
+
+
+.barHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border-bottom: 5px solid #94C11F;
+}
+
+.barHeader div { /* quita el width:100% */
+ 
+  flex: 0 1 auto;
+}
+
+
+
+.barHeader a {
+  text-decoration: none;
+  color: white
+}
+
+div.barHeader {
+  background-color: rgba(67, 67, 67, 0.607);
+  font-size: 10px;
+}
+
+.barHeader div a:hover {
+   position: relative;
+  text-decoration: none;
+   font-weight: bold;
+}
+
+/*Menú principal*/
+
+.topNav ul {
+  display: flex;              /* coloca los <li> en horizontal */
+  justify-content: flex-end;  /* los pega a la derecha */
+  list-style: none;           /* quita los puntos */
+  margin: 0;
+  padding: 0;
+  gap: 20px;                  /* espacio entre elementos */
+  margin-right: 10px;
+  
+}
+
+
+.topNav li a {
+  text-decoration: none;      /* quita subrayado */
+  color: #494949;                /* color del texto */
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+  cursor:pointer;
+  font-size: 11px;
+}
+
+.topNav li a:hover {
+  color: #94C11F;  
+  font-weight: bold; 
+}
+
+/*Estilo SOLO para el último <li> */
+
+.topNav li:last-child a {
+  background-color: #94C11F; /* verde corporativo */
+  color: white;              /* texto blanco */
+  border-radius: 5px;       
+  padding: 8px 16px;       
+    
+}
+
+.topNav li:last-child a:hover {
+  background-color: #7AA019; /* verde más oscuro al pasar ratón */
+  transform: scale(1.1);   /* zoom suave */
+  opacity: 0.9;  
+  
+  
+}
+
+
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;   /* centra logo y nav horizontalmente */
+  align-items: center;       /* centra verticalmente */
+  padding: 10px 30px;
+}
+
+.logo:hover{
+  transform: scale(1.1);   /* zoom suave */
+  opacity: 0.9;            /* cambia opacidad */
+}
+
+.logo{
+  transition: all 0.4s ease-in-out; /* transición suave */
+  height: 40px;
+  width:auto;
+  padding: 8px 12px;
+  cursor:pointer;
+}

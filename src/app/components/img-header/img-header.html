@@ -1,0 +1,21 @@
+<section
+  class="im-header"
+  [style.--h]="height"
+  [style.backgroundImage]="'url(' + src + ')'">
+
+  @if (overlay !== undefined && overlay !== null && overlay > 0) {
+    <div class="overlay" [style.opacity]="overlay"></div>
+  }
+
+  <div class="content"
+       [class.left]="align==='left'"
+       [class.center]="align==='center'"
+       [class.right]="align==='right'">
+
+    @if (title)   { <h1>{{ title }}</h1> }
+    @if (subtitle){ <p class="subtitle">{{ subtitle }}</p> }
+
+    <!-- Slot opcional para añadir botones u otros elementos -->
+    <ng-content></ng-content>
+  </div>
+</section>
